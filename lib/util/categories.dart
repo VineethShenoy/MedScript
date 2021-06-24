@@ -1,10 +1,11 @@
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter/cupertino.dart';
 
 List categories = [
   {
-    "name": "Drinks",
-    "icon": FontAwesomeIcons.wineBottle,
-    "items": 5
+    "name": "Dispencery",
+    "icon": FontAwesomeIcons.clinicMedical,
+    "items": 200
   },
   {
     "name": "Miscellaneous",

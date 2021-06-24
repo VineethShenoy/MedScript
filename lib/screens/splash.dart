@@ -46,14 +46,14 @@ class _SplashScreenState extends State<SplashScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Icon(
-                Icons.fastfood,
+                Icons.medical_services_rounded,
                 size: 150.0,
                 color: Theme.of(context).accentColor,
               ),
 
+              
               SizedBox(width: 40.0),
-
-              Container(
+                Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(
                   top: 15.0,

@@ -120,7 +120,48 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
             ),
           ),
+          
+          SizedBox(height: 10.0),
 
+          Card(
+            elevation: 3.0,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+              ),
+              child: TextField(
+                style: TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.black,
+                ),
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(10.0),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5.0),
+                    borderSide: BorderSide(color: Colors.white,),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.white,),
+                    borderRadius: BorderRadius.circular(5.0),
+                  ),
+                  hintText: "License Number",
+                  prefixIcon: Icon(
+                    FontAwesomeIcons.certificate,
+                    color: Colors.black,
+                  ),
+                  hintStyle: TextStyle(
+                    fontSize: 15.0,
+                    color: Colors.black,
+                  ),
+                ),
+                maxLines: 1,
+                controller: _usernameControl,
+              ),
+            ),
+          ),
           SizedBox(height: 10.0),
 
           Card(

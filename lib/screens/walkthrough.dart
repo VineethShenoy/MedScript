@@ -12,26 +12,25 @@ class _WalkthroughState extends State<Walkthrough> {
 
   List pageInfos = [
     {
-      "title": "Fresh Food",
-      "body": "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus."
-          " Vestibulum ac diam sit amet quam vehicula elementum sed sit amet "
-          "dui. Nulla porttitor accumsan tincidunt.",
+      "title": "Register With Us ",
+      "body": ""
+          ""
+          "",
       "img": "assets/on1.png",
+      
     },
     {
-      "title": "Fast Delivery",
-      "body": "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus."
-          " Vestibulum ac diam sit amet quam vehicula elementum sed sit amet "
-          "dui. Nulla porttitor accumsan tincidunt.",
+      "title": "Submit Your License",
+      "body": "Only Certified doctors can register in this app",
       "img": "assets/on2.png",
     },
     {
-      "title": "Easy Payment",
-      "body": "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus."
-          " Vestibulum ac diam sit amet quam vehicula elementum sed sit amet "
-          "dui. Nulla porttitor accumsan tincidunt.",
+      "title": "Well Maintained Drug database",
+      "body": "Our Drug database is Regularly updated"
+              " choose and prescribe medicines very easily",
       "img": "assets/on3.png",
     },
+  
   ];
   @override
   Widget build(BuildContext context) {
@@ -76,7 +75,7 @@ class _WalkthroughState extends State<Walkthrough> {
               ),
             ),
             done: Text(
-              "Done",
+              "Finish",
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 color: Theme.of(context).accentColor,
@@ -94,7 +93,7 @@ class _WalkthroughState extends State<Walkthrough> {
       body: item['body'],
       image: Image.asset(
         item['img'],
-        height: 185.0,
+       fit: BoxFit.contain
       ),
       decoration: PageDecoration(
         titleTextStyle: TextStyle(

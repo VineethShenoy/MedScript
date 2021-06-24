@@ -180,7 +180,7 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home>{
               },
             ),
 
-            SizedBox(height: 30),
+            SizedBox(height: 70),
           ],
         ),
       ),

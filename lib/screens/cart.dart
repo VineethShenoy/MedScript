@@ -25,7 +25,7 @@ class _CartScreenState extends State<CartScreen> with AutomaticKeepAliveClientMi
 //                print(foods.length);
             return CartItem(
               img: food['img'],
-              isFav: false,
+              isFav: true,
               name: food['name'],
               rating: 5.0,
               raters: 23,

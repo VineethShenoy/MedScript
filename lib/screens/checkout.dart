@@ -25,7 +25,7 @@ class _CheckoutState extends State<Checkout> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(
-          "Checkout",
+          "E-Prescription",
           style: TextStyle(
             fontSize: 23,
             fontWeight: FontWeight.w800,
@@ -45,64 +45,36 @@ class _CheckoutState extends State<Checkout> {
       ),
 
       body: Padding(
-        padding: EdgeInsets.fromLTRB(10.0,0,10.0,130),
+        padding: EdgeInsets.fromLTRB(5.0,50,10.0,10),
         child: ListView(
           children: <Widget>[
-            SizedBox(height: 10.0),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  "Shipping Address",
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-
-                IconButton(
-                  onPressed: (){},
-                  icon: Icon(
-                    Icons.edit,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: 10.0),
-            ListTile(
+             ListTile(
               title: Text(
                 "John Doe",
                 style: TextStyle(
-//                    fontSize: 15,
+                   fontSize: 25,
                   fontWeight: FontWeight.w900,
                 ),
               ),
-              subtitle: Text("1278 Loving Acres Road Kansas City, MO 64110"),
+              subtitle: Text("age:35"),
             ),
 
             SizedBox(height: 10.0),
 
-            Text(
-              "Payment Method",
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-
+           
             Card(
               elevation: 4.0,
               child: ListTile(
-                title: Text("John Doe"),
+                title: Text("Edit Patient Details"),
                 subtitle: Text(
-                  "5506 7744 8610 9638",
+                  "tap here to go back to patient details",
                   style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
                 leading: Icon(
-                  FontAwesomeIcons.creditCard,
+                  Icons.edit,
                   size: 50.0,
                   color: Theme.of(context).accentColor,
                 ),
@@ -118,31 +90,23 @@ class _CheckoutState extends State<Checkout> {
             SizedBox(height: 20.0),
 
             Text(
-              "Items",
+              "Prescribed Medication",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+             
+              SizedBox(height: 20.0),
+
+          Text(
+              "Dolo 650",
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w400,
               ),
             ),
 
-            ListView.builder(
-              primary: false,
-              shrinkWrap: true,
-              itemCount: foods == null ? 0 :foods.length,
-              itemBuilder: (BuildContext context, int index) {
-//                Food food = Food.fromJson(foods[index]);
-                Map food = foods[index];
-//                print(foods);
-//                print(foods.length);
-                return CartItem(
-                  img: food['img'],
-                  isFav: false,
-                  name: food['name'],
-                  rating: 5.0,
-                  raters: 23,
-                );
-              },
-            ),
           ],
         ),
       ),
@@ -179,9 +143,9 @@ class _CheckoutState extends State<Checkout> {
                         borderSide: BorderSide(color: Colors.grey[200],),
                         borderRadius: BorderRadius.circular(5.0),
                       ),
-                      hintText: "Coupon Code",
+                      hintText: "search generic drugs",
                       prefixIcon: Icon(
-                        Icons.redeem,
+                        Icons.search,
                         color: Theme.of(context).accentColor,
                       ),
                       hintStyle: TextStyle(
@@ -201,35 +165,7 @@ class _CheckoutState extends State<Checkout> {
 
                   Padding(
                     padding: EdgeInsets.fromLTRB(10,5,5,5),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          "Total",
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-
-                        Text(
-                          r"$ 212",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w900,
-                            color: Theme.of(context).accentColor,
-                          ),
-                        ),
-
-                        Text(
-                          "Delivery charges included",
-                          style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ],
-                    ),
+                   
                   ),
 
                   Container(
@@ -239,7 +175,7 @@ class _CheckoutState extends State<Checkout> {
                     child: FlatButton(
                       color: Theme.of(context).accentColor,
                       child: Text(
-                        "Place Order".toUpperCase(),
+                        "Prescribe".toUpperCase(),
                         style: TextStyle(
                           color: Colors.white,
                         ),

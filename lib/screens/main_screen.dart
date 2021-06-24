@@ -35,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
             IconButton(
               icon: IconBadge(
                 icon: Icons.notifications,
-                size: 22.0,
+                size: 32.0,
               ),
               onPressed: (){
                 Navigator.of(context).push(
@@ -85,7 +85,7 @@ class _MainScreenState extends State<MainScreen> {
 
               IconButton(
                 icon:Icon(
-                  Icons.favorite,
+                  Icons.store,
                   size: 24.0,
                 ),
                 color: _page == 1
@@ -112,7 +112,7 @@ class _MainScreenState extends State<MainScreen> {
 
               IconButton(
                 icon: IconBadge(
-                  icon: Icons.shopping_cart,
+                  icon: Icons.add,
                   size: 24.0,
                 ),
                 color: _page == 3

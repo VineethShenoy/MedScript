@@ -40,7 +40,7 @@ class _ProfileState extends State<Profile> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Text(
-                            "Jane Doe",
+                            "Dr.Yashwith",
                             style: TextStyle(
                               fontSize: 20.0,
                               fontWeight: FontWeight.bold,
@@ -55,7 +55,7 @@ class _ProfileState extends State<Profile> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Text(
-                            "jane@doefamily.com",
+                            "yashwith@gmail.com",
                             style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.bold,
@@ -121,7 +121,7 @@ class _ProfileState extends State<Profile> {
               ),
 
               subtitle: Text(
-                "Jane Mary Doe",
+                "Yashwith",
               ),
 
               trailing: IconButton(
@@ -145,7 +145,7 @@ class _ProfileState extends State<Profile> {
               ),
 
               subtitle: Text(
-                "jane@doefamily.com",
+                "yashwith@gmail.com",
               ),
             ),
 
@@ -159,7 +159,7 @@ class _ProfileState extends State<Profile> {
               ),
 
               subtitle: Text(
-                "+1 816-926-6241",
+                "+917246392054",
               ),
             ),
 
@@ -173,7 +173,7 @@ class _ProfileState extends State<Profile> {
               ),
 
               subtitle: Text(
-                "1278 Loving Acres RoadKansas City, MO 64110",
+                "Manipal",
               ),
             ),
 
@@ -187,7 +187,7 @@ class _ProfileState extends State<Profile> {
               ),
 
               subtitle: Text(
-                "Female",
+                "Male",
               ),
             ),
 
@@ -201,7 +201,7 @@ class _ProfileState extends State<Profile> {
               ),
 
               subtitle: Text(
-                "April 9, 1995",
+                "June 20, 1975",
               ),
             ),
 
